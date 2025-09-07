@@ -850,6 +850,32 @@
     <i class="fa fa-angle-up fa-3x"></i>
   </div> <!-- end back-to-top -->
 
+  <!-- jQuery primero -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<!-- Owl Carousel JS -->
+<script src="assets/js/owl.carousel.min.js"></script>
+
+<!-- Owl Carousel CSS -->
+<link rel="stylesheet" href="assets/css/owl-carousel/owl.carousel.css">
+<link rel="stylesheet" href="assets/css/owl-carousel/owl.theme.css">
+<link rel="stylesheet" href="assets/css/owl-carousel/owl.transitions.css">
+
+  <script>
+  $(document).ready(function(){
+    $(".screenshots-carousel").owlCarousel({
+      autoPlay: 3000,      // tiempo en ms
+      items: 4,            // cuántas imágenes visibles
+      pagination: true,    // puntos abajo
+      navigation: true,    // flechas
+      navigationText: ["<",">"], 
+      loop: true,
+      transitionStyle: "fade" // si quieres animaciones de owl.transitions.css
+    });
+  });
+</script>
+
+
   <!-- JS libraries and scripts -->
   <script src="assets/js/jquery-1.11.3.min.js"></script>
   <script src="assets/js/bootstrap.min.js"></script>
